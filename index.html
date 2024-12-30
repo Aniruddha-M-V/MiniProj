@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="quote.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="content">
+        <div class="head">
+        <h1>Quote of the day</h1>
+        </div>
+        <div class="quote">
+        <h3 style="font-weight: 500;" id="quote">---</h3>
+        <p id="auth">-Author</p>
+        </div>
+        <div class="btn">
+            <button onclick="changer()">Get New Quote</button>
+        </div>
+        <div class="center">
+            <p id="share">Share on:</p>
+        </div>
+        <div class="links">
+            <a href=""><i class="fa-brands fa-facebook fa-2xl" onclick="share('Face')"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter fa-2xl" onclick="share('Twit')"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-2xl" onclick="share('Insta')"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp fa-2xl" onclick="share('Wapp')"></i></a>
+        </div>
+    </div>
+    
+</body>
+</html>
