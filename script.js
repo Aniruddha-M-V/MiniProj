@@ -20,7 +20,7 @@ async function fetchQuote() {
 
         // Update the HTML with the fetched quote and author
         document.getElementById('quote').textContent = data[0].quote;
-        document.getElementById('auth').textContent = - ${data[0].author};
+        document.getElementById('auth').textContent = data[0].author;
     } catch (error) {
         console.error('Error fetching quote:', error);
         // Show an error message if the API request fails
@@ -42,11 +42,11 @@ function share(platform) {
     let url = '';
 
     if (platform === 'Face') {
-        url = https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://example.com')}&quote=${encodeURIComponent(quoteText + ' ' + authorText)};
+        url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://example.com')}&quote=${encodeURIComponent(quoteText + ' ' + authorText)}`;
     } else if (platform === 'Twit') {
-        url = https://twitter.com/intent/tweet?text=${encodeURIComponent(quoteText + ' ' + authorText)};
+        url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quoteText + ' ' + authorText)}`;
     } else if (platform === 'Insta') {
-        url = https://www.instagram.com/?url=${encodeURIComponent('https://example.com')}&summary=${encodeURIComponent(quoteText + ' ' + authorText)};
+        url = `https://www.instagram.com/?url=${encodeURIComponent('https://example.com')}&summary=${encodeURIComponent(quoteText + ' ' + authorText)}`;
     }
      else if (platform === 'Wapp') {
         
